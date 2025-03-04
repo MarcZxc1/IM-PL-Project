@@ -21,7 +21,8 @@ public class GoogleAuthService {
 	private static final String CREDENTIALS_FILE_PATH = "src/main/resources/client_secret_826790037879-u427ffkr9ilib09ln7qqn96d46ar3lbq.apps.googleusercontent.com.json";
 	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
 	// Define required scopes. Adjust as necessary.
-	private static final List<String> SCOPES = List.of("https://www.googleapis.com/auth/userinfo.profile");
+	private static final List<String> SCOPES = List.of("https://www.googleapis.com/auth/userinfo.profile"
+	, "https://www.googleapis.com/auth/userinfo.email");
 
 	public static Credential authorize() throws Exception {
 		// Load client secrets.

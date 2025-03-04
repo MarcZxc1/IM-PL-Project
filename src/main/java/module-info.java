@@ -19,6 +19,8 @@ module com.dev.marc.fitnesstrackingapplication {
 	requires com.google.api.client.extensions.jetty.auth;
 	requires com.google.api.client.auth;
 	requires com.google.api.client.extensions.java6.auth;
+	requires java.sql;
+	requires org.json;
 
 	opens com.dev.marc.fitnesstrackingapplication to javafx.fxml;
 	exports com.dev.marc.fitnesstrackingapplication;

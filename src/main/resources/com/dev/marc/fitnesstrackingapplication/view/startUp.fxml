@@ -39,5 +39,10 @@
             <Button layoutX="51.0" layoutY="252.0" mnemonicParsing="false" text="Sign up" />
             <Button fx:id="btnLogin" layoutX="161.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="44.0" styleClass="google-oath" stylesheets="@../../../../../style.css" />
          </children></Pane>
+      <Label fx:id="label" layoutX="421.0" layoutY="506.0" prefHeight="59.0" prefWidth="0.0" textFill="WHITE">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
