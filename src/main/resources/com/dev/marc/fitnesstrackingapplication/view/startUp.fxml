@@ -37,7 +37,7 @@
             </Button>
             <PasswordField layoutX="50.0" layoutY="170.0" />
             <Button layoutX="51.0" layoutY="252.0" mnemonicParsing="false" text="Sign up" />
-            <Button layoutX="161.0" layoutY="314.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="44.0" styleClass="google-oath" stylesheets="@../../../../../style.css" />
+            <Button fx:id="btnLogin" layoutX="161.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="44.0" styleClass="google-oath" stylesheets="@../../../../../style.css" />
          </children></Pane>
    </children>
 </AnchorPane>

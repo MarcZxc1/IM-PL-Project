@@ -11,6 +11,15 @@ module com.dev.marc.fitnesstrackingapplication {
 	requires eu.hansolo.tilesfx;
 	requires com.almasb.fxgl.all;
 
+	requires google.api.client;
+	requires com.google.api.client;
+	requires com.google.api.client.json.jackson2;
+	requires com.google.api.client.json.gson;
+	requires jdk.httpserver;
+	requires com.google.api.client.extensions.jetty.auth;
+	requires com.google.api.client.auth;
+	requires com.google.api.client.extensions.java6.auth;
+
 	opens com.dev.marc.fitnesstrackingapplication to javafx.fxml;
 	exports com.dev.marc.fitnesstrackingapplication;
 	exports com.dev.marc.fitnesstrackingapplication.controller;

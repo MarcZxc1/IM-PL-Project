@@ -1,5 +1,6 @@
 package com.dev.marc.fitnesstrackingapplication;
 
+import com.google.api.client.auth.oauth2.Credential;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -7,6 +8,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+
+import static com.dev.marc.fitnesstrackingapplication.model.GoogleAuthService.authorize;
 
 public class Application extends javafx.application.Application {
 
@@ -18,7 +21,7 @@ public class Application extends javafx.application.Application {
 	public void start(Stage stage) {
 		try {
 
-			Parent root = FXMLLoader.load(getClass().getResource(DASHBOARD));
+			Parent root = FXMLLoader.load(getClass().getResource(MAIN_VIEW));
 			Scene scene = new Scene(root);
 			stage.setTitle("Fitness Tracker");
 			Image icon = new Image(getClass().getResourceAsStream("/assets/dumbell.png"));
@@ -34,5 +37,14 @@ public class Application extends javafx.application.Application {
 
 	public static void main(String[] args) {
 		launch();
+
+		try {
+			Credential credential = authorize();
+			System.out.println("Authorization successful!");
+			System.out.println("Access Token: " + credential.getAccessToken());
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Authorization failed.");
+		}
 	}
 }

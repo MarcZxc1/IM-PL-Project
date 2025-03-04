@@ -34,7 +34,6 @@ public class DashboardController {
 		profileController.goToProfile(event);
 	}
 
-
 	@FXML
 	public void goToTrack(ActionEvent event) throws IOException {
 		mapController.setPaneContainer(paneContainer);
