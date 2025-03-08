@@ -3,6 +3,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="Register-Page" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.fitnesstrackingapplication.controller.RegisterController">
+<AnchorPane fx:id="paneContainer" prefHeight="600.0" prefWidth="800.0" styleClass="Register-Page" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.fitnesstrackingapplication.controller.RegisterController">
 
 </AnchorPane>

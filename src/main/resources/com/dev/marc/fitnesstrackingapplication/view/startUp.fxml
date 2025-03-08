@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainAnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="background-pane" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.fitnesstrackingapplication.controller.StartUpController">
+<AnchorPane fx:id="paneContainer" prefHeight="600.0" prefWidth="800.0" styleClass="background-pane" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.fitnesstrackingapplication.controller.StartUpController">
    <children>
       <ImageView fx:id="backgroundImage" fitHeight="79.0" fitWidth="84.0" layoutX="383.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -19,7 +19,7 @@
       </ImageView>
       <Pane fx:id="pane" layoutX="246.0" layoutY="99.0" prefHeight="398.0" prefWidth="352.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="pane" stylesheets="@../../../../../style.css">
          <children>
-            <TextField layoutX="51.0" layoutY="72.0" />
+            <TextField fx:id="usernameField" layoutX="51.0" layoutY="72.0" />
             <Label layoutX="119.0" layoutY="118.0" text="USERNAME" textFill="WHITE">
                <font>
                   <Font name="SansSerif Regular" size="20.0" />
@@ -35,7 +35,7 @@
                   <Font size="18.0" />
                </font>
             </Button>
-            <PasswordField layoutX="50.0" layoutY="170.0" />
+            <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="170.0" />
             <Button layoutX="51.0" layoutY="252.0" mnemonicParsing="false" text="Sign up" />
             <Button fx:id="btnLogin" layoutX="161.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="44.0" styleClass="google-oath" stylesheets="@../../../../../style.css" />
          </children></Pane>
@@ -44,5 +44,7 @@
             <Font size="41.0" />
          </font>
       </Label>
+      <Button layoutX="707.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleLogout" text="Button" />
+      <ImageView fx:id="userImageView" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
