@@ -108,6 +108,81 @@
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
 }
+.list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* Transparent White */
+    -fx-background-radius: 15px; /* Rounded Corners */
+    -fx-border-color: rgba(255, 255, 255, 0.5); /* Subtle Border */
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 2); /* Soft Shadow */
+}
+
+/* Items inside the ListView */
+.list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+}
+
+/* Hover Effect */
+.list-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.4); /* Brighter on Hover */
+    -fx-text-fill: black;
+}
+
+/* Selected Item Effect */
+.list-cell:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+}
+
+/* Scroll Bar Customization */
+.scroll-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+}
+
+GI
+.choice-box {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* Transparent white */
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+    -fx-border-width: 2px;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 2);
+}
+
+.choice-box .context-menu {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Style for each dropdown item */
+.choice-box .menu-item {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: black;
+}
+
+.choice-box .menu-item:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-text-fill: black;
+}
+
+
+
 
 .Profile-Page{
     -fx-background-image: url('assets/Profile-Background.jpg');

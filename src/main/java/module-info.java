@@ -21,6 +21,8 @@ module com.dev.marc.fitnesstrackingapplication {
 	requires com.google.api.client.extensions.java6.auth;
 	requires java.sql;
 	requires org.json;
+	requires org.apache.httpcomponents.client5.httpclient5;
+	requires org.apache.httpcomponents.core5.httpcore5;
 
 	opens com.dev.marc.fitnesstrackingapplication to javafx.fxml;
 	exports com.dev.marc.fitnesstrackingapplication;

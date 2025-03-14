@@ -17,7 +17,7 @@
             <Image url="@../../../../../assets/dumbell.png" />
          </image>
       </ImageView>
-      <Pane fx:id="pane" layoutX="246.0" layoutY="99.0" prefHeight="398.0" prefWidth="352.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="pane" stylesheets="@../../../../../style.css">
+      <Pane layoutX="246.0" layoutY="99.0" prefHeight="398.0" prefWidth="352.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="pane" stylesheets="@../../../../../style.css">
          <children>
             <TextField fx:id="usernameField" layoutX="51.0" layoutY="72.0" />
             <Label layoutX="119.0" layoutY="118.0" text="USERNAME" textFill="WHITE">

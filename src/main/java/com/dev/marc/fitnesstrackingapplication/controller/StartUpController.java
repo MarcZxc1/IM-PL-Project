@@ -5,8 +5,7 @@ import com.dev.marc.fitnesstrackingapplication.model.GoogleAuthService;
 import com.dev.marc.fitnesstrackingapplication.model.GoogleUser;
 import com.dev.marc.fitnesstrackingapplication.model.SimpleDataSource;
 import com.dev.marc.fitnesstrackingapplication.model.UserService;
-// Import the SceneSwitcher utility (assumes it's in the package com.dev.marc.ims.utils).
-import com.dev.marc.fitnesstrackingapplication.utils.SceneSwitcher;
+
 
 import com.dev.marc.fitnesstrackingapplication.utils.TabSwitch;
 import com.google.api.client.auth.oauth2.Credential;  // Represents OAuth credentials.
@@ -167,7 +166,7 @@ public class StartUpController implements Initializable {
 			// and set withAnimation to true to apply a transition effect.
 			TabSwitch.switchTab(paneContainer,
 					"/com/dev/marc/fitnesstrackingapplication/view/Register.fxml",
-					800, 600, true);
+					800, 600, false);
 		} catch (Exception e) {
 			// If any exception occurs during login or scene switching, print the error stack trace.
 			e.printStackTrace();

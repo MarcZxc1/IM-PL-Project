@@ -46,4 +46,10 @@ public class DashboardController {
 		workoutAndGoalsController.switchToWaG(event);
 	}
 
+//	@FXML
+//	public void goToMap(ActionEvent event) throws IOException {
+//		mapController.setPaneContainer(paneContainer);
+//		mapController.switchToMap1(event);
+//	}
+
 }

@@ -6,10 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
-import static com.dev.marc.fitnesstrackingapplication.model.GoogleAuthService.authorize;
+
 
 public class Application extends javafx.application.Application {
 
@@ -38,13 +37,13 @@ public class Application extends javafx.application.Application {
 	public static void main(String[] args) {
 		launch();
 
-		try {
-			Credential credential = authorize();
-			System.out.println("Authorization successful!");
-			System.out.println("Access Token: " + credential.getAccessToken());
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("Authorization failed.");
-		}
+//		try {
+//			Credential credential = authorize();
+//			System.out.println("Authorization successful!");
+//			System.out.println("Access Token: " + credential.getAccessToken());
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			System.out.println("Authorization failed.");
+//		}
 	}
 }
